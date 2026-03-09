@@ -1,0 +1,6 @@
+requests
+ping3
+pymongo
+geoip2
+dnspython
+schedule
