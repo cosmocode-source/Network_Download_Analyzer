@@ -1,5 +1,7 @@
 #Automated Network Download Analyzer
+
 ##Overview
+
 This project implements an automated network monitoring system that measures download performance from multiple global servers over time.
 The system downloads a standardized 100MB test file from different servers and analyzes:
 
@@ -12,6 +14,7 @@ The collected data is stored in MongoDB Atlas and visualized through a Python da
 The goal of the project is to analyze network congestion patterns and throughput trends over a 24-hour period.
 
 ##Core Idea
+
 The system acts as a network probe that repeatedly downloads files from global servers and records performance metrics.
 By analyzing the collected data over time, the system can identify:
 
@@ -21,6 +24,7 @@ Throughput variations during the day
 Network stability patterns
 
 ##System Architecture
+
 <img width="331" height="455" alt="image" src="https://github.com/user-attachments/assets/a7520541-cde2-4a27-aade-8a56df7331e4" />
 
 ##Features
@@ -46,9 +50,11 @@ throughput_Mbps
 transfer_variance
 
 ##Project Structure
+
 <img width="573" height="346" alt="image" src="https://github.com/user-attachments/assets/349e0530-044b-40b2-abb8-fa8ea785de1c" />
 
 ##Installation
+
 ->Clone the repository:
 git clone https://github.com/YOUR_USERNAME/network-download-analyzer.git
 cd network-download-analyzer
@@ -56,6 +62,7 @@ cd network-download-analyzer
 pip install -r requirements.txt
 
 ##MongoDB Setup
+
 This project requires a MongoDB Atlas database.
 Replace the placeholder connection string in: 
 
@@ -65,6 +72,7 @@ Replace the placeholder connection string in:
 <img width="1031" height="325" alt="image" src="https://github.com/user-attachments/assets/cbbef21a-f606-4856-9484-610ee9ab29ce" />
 
 ##24-Hour Network Analysis
+
 To run continuous measurements, schedule the probe using cron.
 Example cron job:
 => 0 * * * * python runner.py
@@ -78,6 +86,7 @@ server performance comparisons
 congestion analysis
 
 ##What Your Dashboard Report Shows
+
 ->The final report includes:
 
 throughput trends over time
