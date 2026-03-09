@@ -1,3 +1,6 @@
+import os
+from pymongo import MongoClient
+
 TEST_SERVERS = [
     {"name": "OVH France", "url": "http://proof.ovh.net/files/100Mb.dat"},
     {"name": "OVH Canada", "url": "http://proof.ovh.ca/files/100Mb.dat"},
@@ -10,7 +13,9 @@ TEST_SERVERS = [
     {"name": "Softlayer Dallas", "url": "http://speedtest.dal05.softlayer.com/downloads/test100.zip"},
     {"name": "Softlayer Frankfurt", "url": "http://speedtest.fra02.softlayer.com/downloads/test100.zip"}
 ]
-MONGO_URI = "mongodb+srv://<usename:password>@cluster0.corydpd.mongodb.net/?retryWrites=true&w=majority"
+
+MONGO_URI = os.getenv("MONGO_URI")
+client = MongoClient(MONGO_URI)
 DOWNLOAD_CHUNK_SIZE = 8192
 PING_COUNT = 5
 CLIENT_NODE_NAME = "azure_probe"

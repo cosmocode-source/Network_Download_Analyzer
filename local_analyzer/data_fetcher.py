@@ -1,7 +1,8 @@
 from pymongo import MongoClient
 import pandas as pd
+import os
 
-MONGO_URI = "mongodb+srv://<username:password>@cluster0.corydpd.mongodb.net/?retryWrites=true&w=majority"
+MONGO_URI = os.getenv("MONGO_URI")
 client = MongoClient(MONGO_URI)
 db = client["cn_project"]
 collection = db["metrics"]
