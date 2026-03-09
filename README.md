@@ -56,8 +56,10 @@ transfer_variance
 ## Installation
 
 ->Clone the repository:
+
 git clone https://github.com/YOUR_USERNAME/network-download-analyzer.git
 cd network-download-analyzer
+
 ->Install Dependancies:
 pip install -r requirements.txt
 
@@ -67,6 +69,7 @@ This project requires a MongoDB Atlas database.
 Replace the placeholder connection string in: 
 
 ->azure_downloader/config.py
+
 ->local_analyzer/data_fetcher.py
 
 <img width="1031" height="325" alt="image" src="https://github.com/user-attachments/assets/cbbef21a-f606-4856-9484-610ee9ab29ce" />
