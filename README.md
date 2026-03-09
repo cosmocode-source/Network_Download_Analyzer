@@ -65,14 +65,13 @@ cd network-download-analyzer
 
 pip install -r requirements.txt
 
+pip install python-dotenv
+
 ## MongoDB Setup
 
 This project requires a MongoDB Atlas database.
-Replace the placeholder connection string in: 
-
-->azure_downloader/config.py
-
-->local_analyzer/data_fetcher.py
+Replace the placeholder connection string in the .env.ex. Also before running covert the file name to .env.
+Import teh necessary modules required to run the program.
 
 <img width="1031" height="325" alt="image" src="https://github.com/user-attachments/assets/cbbef21a-f606-4856-9484-610ee9ab29ce" />
 
