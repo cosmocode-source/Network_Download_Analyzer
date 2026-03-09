@@ -58,9 +58,11 @@ transfer_variance
 ->Clone the repository:
 
 git clone https://github.com/YOUR_USERNAME/network-download-analyzer.git
+
 cd network-download-analyzer
 
 ->Install Dependancies:
+
 pip install -r requirements.txt
 
 ## MongoDB Setup
